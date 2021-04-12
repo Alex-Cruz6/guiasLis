@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edades de personas</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Andika" />
+    <link rel="stylesheet" href="css/edades.css" />
+</head>
+
+<body>
+    <section>
+        <article>
+            <form name="frmedades" action="promedioedad.php" method="POST">
+                <fieldset>
+                    <legend><span>Edades de personas:</span></legend>
+                    <ul>
+                        <li><label for="edad">Ingreso de edades:</label>
+                            <div class="campo">
+                                <input type="text" name="edad" id="edad" maxlength="60" />
+                                <input type="reset" name="agregar" id="agregar" value="Agregar" /><br />
+                                <span id="numbersOnly">El campo sólo acepta números.</span>
+                            </div>
+                        </li>
+                        <li><label for="ingresados">Edades ingresadas:</label>
+                            <div class="campo">
+                                <select
+                                    name="ingresados[]" id="ingresados" size="6" multiple="multiple">
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="campo"><input type="submit" name="enviar" id="enviar" value="Enviar"
+                                    class="boton" />
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </article>
+    </section>
+</body>
+<script src="js/agregar.js"></script>
+<script src="js/validatefield.js"></script>
+<script src="js/modernizr.custom.lis.js"></script>
+
+</html>

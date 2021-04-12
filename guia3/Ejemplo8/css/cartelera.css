@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body               {
+    background-color: rgb(255,240,155);
+    background-image: url(../img/red-curtains.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    font: 16px;
+}
+
+h1                 {
+    color: #fcfdfe;
+    font: 2.2em Bold Geneva,Helvetica,sans-serif;
+    margin: 2% auto;
+    text-align: center;
+    text-shadow: 5px 2px 2px rgba(160,170,180,0.75);
+}
+
+hgroup h2          {
+    font: 1.75em Bold Verdana,Helvetica,sans-serif;
+    text-align: center;
+}
+
+section            {
+    /*FF3.6+*/
+    background: -moz-linear-gradient(top, rgba(243,226,199,0.93) 0%, rgba(243,226,199,0.93) 1%, rgba(233,212,179,.93) 5%, rgba(182,141,76,1) 100%); 
+    /* Chrome,Safari4+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(243,226,199,0.93)), color-stop(1%,rgba(243,226,199,0.93)), color-stop(5%,rgba(233,212,179,0.93)), color-stop(100%,rgba(182,141,76,1))); 
+    /* Chrome10+,Safari5.1+ */
+    background: -webkit-linear-gradient(top, rgba(243,226,199,0.93) 0%,rgba(243,226,199,0.93) 1%,rgba(233,212,179,0.93) 5%,rgba(182,141,76,1) 100%);    
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top,  rgba(243,226,199,0.93) 0%,rgba(243,226,199,0.93) 1%,rgba(233,212,179,0.93) 5%,rgba(182,141,76,1) 100%); 
+    /* IE10+ */
+    background: -ms-linear-gradient(top,  rgba(243,226,199,0.93) 0%,rgba(243,226,199,0.93) 1%,rgba(233,212,179,0.93) 5%,rgba(182,141,76,1) 100%); 
+    /* W3C */
+    background: linear-gradient(to bottom,  rgba(243,226,199,0.93) 0%,rgba(243,226,199,0.93) 1%,rgba(233,212,179,0.93) 5%,rgba(182,141,76,1) 100%); 
+    /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf3e2c7', endColorstr='#b68d4c',GradientType=0 ); 
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -o-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    behavior:url(htc/border-radius.htc);
+    margin: 2% auto;
+    vertical-align: top;
+    width: 98%;
+}
+
+article            {
+    /* border: 1px solid Blue; */
+    display: inline-block;
+    margin: 0 2%;
+    min-height: 560px;
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    vertical-align: top;
+    width: 25%;
+}
+
+article img         {
+    display: block;
+    -moz-box-shadow: 3px 3px 3px 3px rgba(100,50,40,0.75);
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(100,50,40,0.75);
+    -o-box-shadow: 3px 3px 3px 3px rgba(100,50,40,0.75);
+    -ms-box-shadow: 3px 3px 3px 3px rgba(100,50,40,0.75);
+    box-shadow: 3px 3px 3px 3px rgba(100,50,40,0.75);
+}
+
+/* Estilos para el formulario */
+form                  {
+    margin:auto;
+    width:286px;
+    padding:12px;
+    border:1px solid #270644;
+    /* Agregando propiedades CSS3 */
+    -ms-border-radius:12px;
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+    -khtml-border-radius:12px;
+    border-radius:12px;
+    behavior:url(htc/border-radius.htc);
+    
+    /* Color de fondo del formulario con degradado con gradiente */
+    background: rgb(239,197,202); /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(239,197,202,1) 0%, rgba(241,142,153,1) 3%, rgba(210,75,90,1) 37%, rgba(186,39,55,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(239,197,202,1)), color-stop(3%,rgba(241,142,153,1)), color-stop(37%,rgba(210,75,90,1)), color-stop(100%,rgba(186,39,55,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg, rgba(239,197,202,1) 0%,rgba(241,142,153,1) 3%,rgba(210,75,90,1) 37%,rgba(186,39,55,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg, rgba(239,197,202,1) 0%,rgba(241,142,153,1) 3%,rgba(210,75,90,1) 37%,rgba(186,39,55,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg, rgba(239,197,202,1) 0%,rgba(241,142,153,1) 3%,rgba(210,75,90,1) 37%,rgba(186,39,55,1) 100%); /* IE10+ */
+    background: linear-gradient(45deg, rgba(239,197,202,1) 0%,rgba(241,142,153,1) 3%,rgba(210,75,90,1) 37%,rgba(186,39,55,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#ba2737',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+    /* Sombra a los costados de las cajas */
+    box-shadow:0px -5px 300px #270644;
+    -ms-box-shadow:0px -5px 300px #270644;
+    -moz-box-shadow:0px -5px 300px #270644;
+    -webkit-box-shadow:0px -5px 300px #270644;
+}
+
+legend                 {
+    display: block;
+    color: #F0E68C;
+    font: Bold 1em Linotype,sans-serif;
+    width: 124px;
+    padding: 5px;
+}
+
+label                  {
+    display:block;
+    color: #F0E68C;
+    font: Bold 0.9em Linotype,sans-serif;
+    width: 60px;
+    padding: 6px;
+    /* border: 1px solid White; */
+}
+
+input, select                  {
+    width: 250px;
+    background: #8a33c6;
+    padding: 6px;
+    margin-bottom: 10px;
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #AD64E0;
+    border-bottom: 1px solid #AD64E0;
+    /* Agregando propiedades CSS3 */
+    -webkit-transition-property: -webkit-box-shadow, background;
+    -webkit-transition-duration: 0.25s;
+    -moz-box-shadow: 0px 0px 2px #000;
+    -webkit-box-shadow: 0px 0px 2px #000;
+}
+
+input[type=text]       {
+    font: Normal 1em Palatino,Helvetica,sans-serif;
+    background: #DEB887;
+    color: #8B0000;
+}
+
+select                 {
+    font: Normal 1em Palatino,Helvetica,sans-serif;
+    background: #DEB887;
+    color: #8B0000;
+}
+
+input[type=submit]     {
+    background-color:#A0522D;
+    color:#DEB887;
+    border-top: 2px solid #F5DEB3;
+    border-left: 2px solid #F5DEB3;
+    border-right: 2px solid #BC8F8F;
+    border-bottom: 2px solid #BC8F8F;
+    text-transform:uppercase;
+    font:Bold 1em Linotype,sans-serif;
+}
+
+input[type=submit]:hover {
+    background: #905020;
+    color: #DFBCA7;
+}
+
+input:hover            {
+    -webkit-box-shadow: 0px 0px 4px #000;
+    background: #A0522D;
+}
+
+select:hover            {
+    -webkit-box-shadow: 0px 0px 4px #000;
+    background: #A0522D;
+}

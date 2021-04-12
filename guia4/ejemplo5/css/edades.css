@@ -1,0 +1,181 @@
+*              {
+   border:0;
+   padding:0;
+}
+
+html, body {
+   height: 100%;
+}
+
+body {
+   font-size: 15px;
+   background: url("../svg/gradient-blue-black-linear.svg");
+}
+
+#numbersOnly   {
+   background-color:Red;
+   border-radius: 8px;
+   -moz-border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -o-border-radius: 8px;
+   -ms-border-radius: 8px;
+   color:Gold;
+   font:Bold 0.9em Arial,Helvetica,sans-serif;
+   display:block;
+   opacity:0.8;
+   padding:4px 5px;
+   visibility:hidden;
+}
+
+fieldset             {
+   background-color:rgb(190,220,230);
+   border:6px ridge rgb(50,100,150);
+   -moz-border-radius:15px;
+   -webkit-border-radius:15px;
+   -o-border-radius:15px;
+   -ms-border-radius:15px;
+   border-radius:15px;
+   left:-23%;
+   margin-left:50%;
+   padding:16px 18px;
+   position:relative;
+   width:46%;
+}
+
+legend span          {
+   display:block;
+   border:3px ridge rgb(50,100,150);
+   background-color:rgb(20,20,100);
+   font:bold 1em "Century Gothic","Arial Rounded MT Bold",Helvetica,sans-serif;
+   color:rgb(225,250,250);
+   padding:2px 5px;
+}
+
+label                {
+   font:normal 1em "Arial Rounded MT Bold","Century Gothic",Helvetica,sans-serif;
+   color:rgb(30,60,100);
+   display:block;
+   float:left;
+   width:30%;
+   text-align:right;
+   padding-top:0.6em;
+   padding-bottom:0.6em;
+}
+
+.campo        {
+   display:block;
+   float:right;
+   font:Normal 0.9em "Century Gothic","Arial Rounded MT Bold",Helvetica,sans-serif;
+   position:relative;
+   width:68%;
+}
+
+input[type="text"] {
+   color: Navy;
+   font: Normal 1em 'Oswald',Arial,Helvetica,'Liberation Sans';
+   line-height: 1.4em;
+   height: 1.4em;
+   width: 40%;
+}
+
+select {
+   color: Navy;
+   font: Normal 1em 'Oswald',Arial,Helvetica,'Liberation Sans';
+   line-height: 1.4em;
+   width:44%;
+}
+
+input#agregar {
+   /* Estilo de borde del botón */
+   border:2px groove #7c93ba;
+   /* Forzar el cambio de tipo de cursor al posicionar 
+      el puntero del ratón encima del botón */
+   cursor:pointer;
+   /* Agregar relleno al contenido del botón */
+   padding: 5px 25px;
+   /* Dar efecto de gradiente al color de fondo del botón */
+   /* Para navegadores antiguos que no soporten gradiente
+      colocar un color sólido */
+   background-color:#6b6dbb;
+   background: -webkit-gradient(linear, left top, left bottom, from(#88add7), to(#6b6dbb));
+   background: -webkit-linear-gradient(top, #88add7, #6b6dbb);
+   background: -moz-linear-gradient(top, #88add7, #6b6dbb);
+   background: -o-linear-gradient(top, #88add7, #6b6dbb);
+   background: linear-gradient(top, #88add7, #6b6dbb);
+   /* Estilo del texto del botón */
+   font-family:Oswald, Arial, sans-serif;
+   color:#fff;
+   font-size:1.1em;
+   letter-spacing:.1em;
+   font-variant:small-caps;
+   /* Definir bordes redondeados en las esquinas de la derecha */
+   -webkit-border-radius: 0 15px 15px 0;
+   -moz-border-radius: 0 15px 15px 0;
+   -o-border-radius: 0 15px 15px 0;
+   -ms-border-radius: 0 15px 15px 0;
+   border-radius: 0 15px 15px 0;
+   /* Añadir un tanto de sombra al botón */
+   -webkit-box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+   -moz-box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+   -o-box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+   -ms-box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+   box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+}
+
+input#agregar:hover, 
+input#agregar:focus {
+   color:#edebda;
+   /* Reducir tamaño de la sombra para para producir efecto de botón presionado */
+   -webkit-box-shadow: rgba(0, 0, 0, .25) 0 1px 0px;
+   -moz-box-shadow: rgba(0, 0, 0, .25) 0 1px 0px;
+   -o-box-shadow: rgba(0, 0, 0, .25) 0 1px 0px;
+   -ms-box-shadow: rgba(0, 0, 0, .25) 0 1px 0px;
+   box-shadow: rgba(0, 0, 0, .25) 0 1px 0px;
+}
+
+.boton               {
+   /* Colocar relleno al contenido del botón */
+   padding: 4px 20px;
+   /* Poner efecto de gradiente para el color de fondo del botón */
+   /* Para navegadores antiguos que no soportan gradientes colocar un color sólido */
+   background:#ffae00;
+   background: -webkit-linear-gradient(top, #ffae00, #d67600);
+   background: -moz-linear-gradient(top, #ffae00, #d67600);
+   background: -o-linear-gradient(top, #ffae00, #d67600);
+   background: linear-gradient(top, #ffae00, #d67600);
+   border:2px outset #dad9d8;
+   /* Estilos para el texto */
+   font-family:Andika, Arial, sans-serif;
+   font-size:1.1em;
+   letter-spacing:0.05em;
+   color:#fff;
+   text-shadow: 0px 1px 10px #000;
+   /* Agregar el efecto de esquinas redondeadas para los bordes del botón */
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -o-border-radius: 15px;
+   -ms-border-radius: 15px;
+   border-radius: 15px;
+   /* Agregar efecto de sombra al botón */
+   -webkit-box-shadow: rgba(0, 0, 0, .55) 0 1px 6px;
+   -moz-box-shadow: rgba(0, 0, 0, .55) 0 1px 6px;
+   -o-box-shadow: rgba(0, 0, 0, .55) 0 1px 6px;
+   -ms-box-shadow: rgba(0, 0, 0, .55) 0 1px 6px;
+   box-shadow: rgba(0, 0, 0, .55) 0 1px 6px;
+}
+
+.boton:hover,
+.boton:focus {
+   border:2px solid #dad9d8;
+}
+
+ul                   {
+   list-style-type:none;
+   margin:0;
+   padding:0;
+}
+
+li                   {
+   line-height:2.1em;
+   display:block;
+}

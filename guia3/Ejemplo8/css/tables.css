@@ -1,0 +1,52 @@
+html, body             {
+    height: 100%;
+}
+
+body                   {
+	line-height: 1.6em;
+	font-size: 16px;
+}
+
+caption                {
+    font: Bold 1.25em "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    color: rgb(100,50,40);
+}
+
+/* Estilos ocupados en el ejemplo de formularios */
+#hor-zebra             {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 45px;
+	width: 480px;
+	text-align: left;
+	border-collapse: collapse;
+}
+#hor-zebra th          {
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 8px;
+	color: #039;
+}
+
+#hor-zebra td          {
+	padding: 8px;
+	color: rgb(100,50,40);
+}
+
+#hor-zebra .thead      {
+    background-color: rgb(100,50,40);
+}
+
+#hor-zebra .thead th   {
+    padding: 10px 8px;
+    color: #FFDEAD;
+    font:Bold 12px "Lucida Sans Unicode", Helvetica, Sans-Serif;
+}
+
+#hor-zebra .odd        {
+	background-color: #F0E68C; 
+}
+
+#hor-zebra .even        {
+	background-color: #F9EC96; 
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Comparar números</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <link href="http://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/formstyle.css" />
+    <!--Para las versiones anteriores del IE9 -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+    <header>
+        <h1>Unidades Valorativas</h1>
+    </header>
+    <section>
+        <article id="formarea">
+            <form name="frmpalabras" method="POST" action="calcularcum.php">
+                <fieldset>
+                    <label for="score1">Nota 1:</label><input type="text" name="nota1" id="nota1" placeholder="Nota 1" /><br />
+                    <label for="score2">Nota 2:</label><input type="text" name="nota2" id="nota2" placeholder="Nota 2" /><br />
+                    <label for="score3">Nota 3:</label><input type="text" name="nota3" id="nota3" placeholder="Nota 3" /><br />
+                    <label for="score4">Nota 4:</label><input type="text" name="nota4" id="nota4" placeholder="Nota 4" /><br>
+                    <label for="score5">Nota 5:</label><input type="text" name="nota5" id="nota5" placeholder="Nota 5" /><br />
+                    <input type="submit" name="conteo" id="count" value="Enviar" />
+                </fieldset>
+            </form>
+        </article>
+    </section>
+</body>
+
+</html>

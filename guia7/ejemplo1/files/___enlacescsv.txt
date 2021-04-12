@@ -1,0 +1,5 @@
+"Universidad Don Bosco",http://www.udb.edu.sv,1
+"Editorial Universidad Don Bosco",http://www.udb.edu.sv/editorial,1.1
+"Sitio web móvil de la Universidad Don Bosco",http://www.udb.edu.sv/movil,1.2
+"Radio Don Bosco",http://www.rdb.edu.sv,1.3
+"Nuevo Ingreso",http://www.udb.edu.sv/nuevoingreso,1.4

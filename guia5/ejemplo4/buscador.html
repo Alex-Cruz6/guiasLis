@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Buscador UDB</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet"
+        href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:400,400italic,700italic" />
+    <link rel="stylesheet" href="css/buscador.css" />
+    <link rel="stylesheet" href="css/formoid-solid-purple.css" />
+    <script src="js/incluir_y_o.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header id="inset">
+            <h1>Buscador UDB</h1>
+            <img src="images/logoudb.png" alt="Logo UDB" title="Logo UDB" />
+        </header>
+        <section>
+            <article>
+                <form name="formulario" action="buscador.php" method="POST" class="formoid-solid-purple">
+                    <div class="title">
+                        <h2>Buscador de palabras en páginas web</h2>
+                    </div>
+                    <div class="element-input">
+                        <label for="palabras" class="title"></label>
+                        <div class="item-cont">
+                            <input type="text" name="palabras" required="required"
+                                placeholder="Palabra(s) a buscar" id="palabras" class="large" />
+                            <span class="icon-place"></span>
+                        </div>
+                    </div>
+                    <div class="element-checkbox">
+                        <label class="title">Opciones de búsqueda:</label>
+                        <div class="column column3">
+                            <label>
+                                <input type="checkbox" name="palabracompleta"
+                                    id="palabracompleta" />
+                                    <span>Palabra completa</span>
+                                </label>
+                        </div>
+                        <span class="clearfix"></span>
+                        <div class="column column3">
+                            <label>
+                                <input type="checkbox" name="mayusculasminusculas" id="mayusculasminusculas" />
+                                <span>Diferenciar mayúsculas y minúsculas</span>
+                            </label>
+                        </div>
+                        <span class="clearfix"></span>
+                        <div class="column column3">
+                            <label>
+                                <input type="checkbox" name="expresionregular" id="expresionregular" />
+                                <span>Utilizar como expresión regular</span>
+                            </label>
+                        </div>
+                        <span class="clearfix"></span>
+                    </div>
+                    <div class="submit">
+                        <input type="button" value="Añadir condición Y" />
+                        <input type="button" value="Añadir condición O" />
+                        <input type="submit" value="Realizar Búsqueda" />
+                    </div>
+                </form>
+            </article>
+        </section>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/formoid-solid-purple.js"></script>
+
+</html>

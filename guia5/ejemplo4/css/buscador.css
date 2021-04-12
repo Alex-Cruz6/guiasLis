@@ -1,0 +1,44 @@
+/* Fuentes especiales */
+@font-face {
+    font-family: 'League-Gothic';
+    src: url('../fonts/leaguegothic/League_Gothic.eot');
+    src: url('../fonts/leaguegothic/League_Gothic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/leaguegothic/League_Gothic.woff') format('woff'),
+        url('../fonts/leaguegothic/League_Gothic.ttf') format('truetype'),
+        url('../fonts/leaguegothic/League_Gothic.svg#League-Gothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+#inset {
+    padding: 8px;
+}
+#inset h1 {
+    color: #ccc;
+    font-family: "League-Gothic", Courier;
+    font-size: 3.2em;
+    letter-spacing: 1px;
+    margin: 10px auto;
+    text-align: center;
+    text-transform: uppercase; 
+    text-shadow: 0px 2px 3px #666;
+}
+body {
+    background-image: url("../images/purple-violet.jpg");
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+form {
+    background-color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Roboto',Arial,Helvetica,sans-serif;
+    color: #34495E;
+    max-width: 960px;
+    min-width: 225px;
+}

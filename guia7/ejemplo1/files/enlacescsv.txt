@@ -1,0 +1,6 @@
+"Universidad Don Bosco",www.udb.edu.sv,1
+"Editorial Universidad Don Bosco",www.udb.edu.sv/editorial,1.1
+"Radio Don Bosco",www.radio.udb.edu.sv,1.2
+"Nuevo Ingreso",www.udb.edu.sv/nuevoingreso,1.3
+UDB,http://udb.edu.sv,hola
+web,we.com,2

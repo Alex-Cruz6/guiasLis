@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1,  maximum-scale=1">
+    <title>Cuentas de ahorro</title>
+    <link rel="stylesheet" media="screen" href="css/bank.css" />
+    <script src="js/validaciones.js"></script>
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <section>
+        <article>
+            <form name="operaciones" id="operaciones" method="POST" action="procesos.php">
+                <fieldset>
+                    <legend><span>Operaciones bancarias</span></legend>
+                    <ul>
+                        <li>
+                            <label for="operacion">Operación</label>
+                            <select name="opciones" id="opciones" class="opciones">
+                                <option value="0" id="apertura">Apertura</option>
+                                <option value="1" id="deposito">Deposito</option>
+                                <option value="2" id="retiro">Retiro</option>
+                            </select>
+                            
+                        </li>
+                        <li>
+                            <label for="nombre">Nombre:</label>
+                            <div class="campo">
+                                <input type="text" id="nombre" name="nombre" size="25" maxlength="25" />
+                            </div>
+                        </li>
+                        <li id="cuenta">
+                            <label for="cuenta">Número de cuenta:</label>
+                            <div class="campo">
+                                <input type="number" id="numCuenta" name="numCuenta" size="25" maxlength="25" />
+                            </div>
+                        </li>
+                        <li>
+                            <label for="cantidad">Cantidad:</label>
+                            <div class="campo">
+                                <input type="text" id="cantidad" name="cantidad" size="8" maxlength="10" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="boton">
+                                <input type="reset" class="btn-danger" name="restablecer" value="Cancelar" />
+                                <input type="submit" class="btn-primary" name="enviar" value="Enviar" />
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </article>
+    </section>
+</body>
+</html>

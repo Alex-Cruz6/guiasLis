@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo de checkboxes, radios y multi select</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bitter" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" />
+    <link rel="stylesheet" href="css/jquery.multiselect.css" />
+    <link rel="stylesheet" href="css/fields.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="inset">Ciudades y destinos de vacación</h1>
+    </header>
+    <section>
+        <article>
+            <div class="form-style">
+                <form name="frmdestinos" action="destinos.php" method="POST">
+                    <h1>Selección de<span>países y ciudades</span></h1><select name="location[]" multiple="multiple"
+                        size="5" id="location">
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Panamá">Panamá</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Belice">Belice</option>
+                    </select><br />
+                    <div id="places">
+                        <input type="checkbox" name="place[]" id="place1" value="Ciudad de Guatemala" />
+                        <label for="place1"><span></span>Ciudad de Guatemala</label><br />
+                        <input type="checkbox" name="place[]" id="place2" value="Antigua Guatemala" />
+                        <label for="place2"><span></span>Antigua Guatemala</label><br />
+                        <input type="checkbox" name="place[]" id="place3" value="Panajachel" />
+                        <label for="place3"><span></span>Panajachel</label><br />
+                        <input type="checkbox" name="place[]" id="place4" value="San Salvador" checked="checked" />
+                        <label for="place4"><span></span>San Salvador</label><br />
+                        <input type="checkbox" name="place[]" id="place5" value="Santa Ana" />
+                        <label for="place5"><span></span>Santa Ana</label><br />
+                        <input type="checkbox" name="place[]" id="place6" value="Santa Miguel" />
+                        <label for="place6"><span></span>SantaMiguel</label><br />
+                        <input type="checkbox" name="place[]" id="place7" value="San José" />
+                        <label for="place7"><span></span>San José</label><br />
+                        <input type="checkbox" name="place[]" id="place8" value="Puntarenas" />
+                        <label for="place8"><span></span>Puntarenas</label><br />
+                        <input type="checkbox" name="place[]" id="place9" value="San Pedro Sula" />
+                        <label for="place9"><span></span>San Pedro Sula</label><br />
+                        <input type="checkbox" name="place[]" id="place10" value="Tegucigalpa" />
+                        <label for="place10"><span></span>Tegucigalpa</label><br />
+                        <input type="checkbox" name="place[]" id="place11" value="Granada" />
+                        <label for="place11"><span></span>Granada</label><br />
+                        <input type="checkbox" name="place[]" id="place12" value="Ciudad de Panamá" />
+                        <label for="place12"><span></span>Ciudad de Panamá</label><br />
+                        <input type="checkbox" name="place[]" id="place13" value="Colón" />
+                        <label for="place13"><span></span>Colón</label><br />
+                        <input type="checkbox" name="place[]" id="place14" value="Colón" />
+                        <label for="place14"><span></span>Belmopán</label><br /></div>
+                        <input type="submit" name="submit" id="enviar" value="Enviar" class="button" />
+                        <input type="reset" name="cancel" value="Cancelar" class="button" />
+                </form>
+            </div>
+        </article>
+    </section>
+</body>
+<script src="js/checkFields.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script src="js/jquery.multiselect.js"></script>
+<script>
+    $(function () { $("#location").multiselect(); });
+</script>
+</html>

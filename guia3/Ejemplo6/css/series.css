@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-size: 16px;
+}
+
+body                   {
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.52, #FFF04A),color-stop(1, #FAFA82));
+    background-image: -o-linear-gradient(bottom, #FFF04A 52%, #FAFA82 100%);
+    background-image: -moz-linear-gradient(bottom, #FFF04A 52%, #FAFA82 100%);
+    background-image: -webkit-linear-gradient(bottom, #FFF04A 52%, #FAFA82 100%);
+    background-image: -ms-linear-gradient(bottom, #FFF04A 52%, #FAFA82 100%);
+    background-image: linear-gradient(to bottom, #FFF04A 52%, #FAFA82 100%);
+}
+
+h1                     {
+    color: #9363B3;
+    font: bold 3.2em "Droid Serif",Arial,Helvetica,"Liberation Sans";
+    text-align: center;
+    text-shadow: 5px 2px 2px rgba(90,42,35,0.75);
+}
+
+article                {
+    height: auto;
+    margin: 20px auto;
+    width: 56%;
+}
+
+form {
+    background-color: #FFFFFF;
+    color:#34495E;
+    font-size:14px;
+    font-family:'Roboto',Arial,Helvetica,sans-serif;
+    max-width:480px;
+    min-width:180px;
+}
+
+.caracter              {
+    color: Indigo;
+    font: 700 1em "Droid Serif",Arial,Helvetica,"Liberation Sans";
+    text-shadow: 0 1px 0 #fff;
+}
+
+#box                   {
+    position: relative;
+    width: 96%;
+    background: #ddd;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 2em 1.5em;
+    color: rgba(0,0,0, .8);
+    text-shadow: 0 1px 0 #fff;
+    line-height: 1.5;
+    margin: 60px auto;
+}
+
+#box:before, #box:after {
+    background: rgba(0, 0, 0, 0.7);
+    bottom: 15px;
+    -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    content: "";
+    left: 10px;
+    max-width:960px;
+    position: absolute;
+    top: 80%;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    width: 96%;
+    z-index: -1;
+}
+
+#box:after               {
+    left: auto;
+    right: 10px;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+}

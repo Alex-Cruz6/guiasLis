@@ -1,0 +1,88 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html, body {
+   height: 100%;
+}
+
+body                {
+   background:rgb(210,250,210) url(../img/money.jpg) repeat-y left;
+   font-size: 16px;
+   margin:0 150px;
+}
+
+h2                  {
+   text-align:center;
+   font:bold 1.5em "Cooper Black";
+   color:Brown;
+}
+
+/* Estilos para el formulario de captura de datos */
+fieldset            {
+   background-color:rgb(5,85,15);
+   width:30%;
+   position:relative;
+   left:50%;
+   margin:1em 0;
+   margin-left:-20%;
+   padding:1em;
+   border:1px solid yellow;
+}
+
+label, legend {
+   font:bold 1em Arial,Helvetica,"Liberation Sans";
+   color:Gold;
+   background-color:rgb(5,85,15);
+}
+
+label               {
+   display:block;
+}
+
+input.inputField    {
+   background-color:rgb(205,250,205);
+   color:DarkGreen;
+   font:bold 1em Perpetua,sans-serif;
+   padding: 3px 5px;
+   width:95%;
+}
+
+.inputField:hover, .inputField:focus   {
+   background-color:Khaki;
+}
+
+input.inputButton   {
+   background-color:Orange;
+   color:DarkGreen;
+   font:bold 10pt "Myriad Pro",Verdana,sans-serif;
+   height: 30px;
+   left:12%;
+   margin:8px 10px;
+   position:relative;
+   width:30%;
+}
+
+.inputButton:hover, .inputButton:focus{
+   background-color:Gold;
+   color:DarkGreen;
+}
+
+/* Estilos para la boleta de pago */
+table               {
+   border-collapse:collapse;
+   border:4px ridge rgb(5,25,5);
+   padding:10px;
+}
+
+table tr            {
+   border-collapse:collapse;
+   border:1px solid rgb(10,50,10);
+}
+
+table td            {
+   font:normal 10pt "Lucida Sans",Verdana,Helvetica,sans-serif;
+   color:rgb(50,20,3);
+   padding:5px;
+}

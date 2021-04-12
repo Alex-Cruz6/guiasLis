@@ -1,0 +1,99 @@
+.component {
+	line-height: 1.5em;
+	margin: 0 auto;
+	padding: 0.5em 0 0.6em;
+	max-width: 1000px;
+	overflow: hidden;
+	width: 24%;
+}
+
+.component .filler {
+	font-family: 'Lato',Arial,Helvetica,'Liberation Sans';
+	color: #d3d3d3;
+}
+
+table {
+    background: #fff;
+    border-collapse: collapse;
+    font-family: 'Lato',Arial,Helvetica,'Liberation Sans';
+    margin: 0 auto;
+    margin-bottom: 3em;
+    width: 80%;
+}
+
+td, th {
+    padding: 0.65em 1em;
+    text-align: center;
+}
+
+td.err {
+    background-color: #e992b9;
+    color: #fff;
+    font-size: 0.75em;
+    line-height: 1;
+    text-align: center;
+}
+
+th {
+    background-color: #3c88b6;
+    font-family: 'Lato';
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+
+tbody th {
+	background-color: #2ea879;
+}
+
+tbody tr:nth-child(2n-1) {
+    background-color: #d6cdad;
+    transition: all .125s ease-in-out;
+}
+tbody tr:hover {
+    background-color: rgba(125,110,90,.3);
+}
+
+/* For appearance */
+.sticky-wrap {
+	overflow-x: auto;
+	overflow-y: hidden;
+	position: relative;
+	margin: 1.2em 0;
+	width: 100%;
+}
+
+.sticky-wrap .sticky-thead,
+.sticky-wrap .sticky-col,
+.sticky-wrap .sticky-intersect {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .125s ease-in-out;
+	z-index: 50;
+	/* Previene que se estire la tabla a tamaño completo */
+	width: auto; 
+}
+
+.sticky-wrap .sticky-thead {
+    box-shadow: 0 0.25em 0.1em -0.1em rgba(0,0,0,.125);
+    /* Force stretch */
+    width: 100%; 
+    z-index: 100;
+}
+
+.sticky-wrap .sticky-intersect {
+    opacity: 1;
+    z-index: 150;
+}
+
+.sticky-wrap .sticky-intersect th {
+    background-color: #666;
+    color: #eee;
+}
+
+.sticky-wrap td,
+.sticky-wrap th {
+	box-sizing: border-box;
+}

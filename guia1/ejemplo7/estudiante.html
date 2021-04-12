@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Cálculo de precio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width,user-scalable=no,initialscale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
+    <link rel="stylesheet" href="css/estudiante.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Entrada al cine</h1>
+    </header>
+    <section>
+        <article>
+            <form name="frmcalculo" action="estudiante.php" method="POST">
+                <h2>Datos del visitante:</h2>
+                <input type="text" name="edad" id="age" maxlength="2" placeholder="Edad" pattern="\d{1,2}"
+                    required /><br />
+                <input type="text" name="pelicula" id="movie" maxlength="100" placeholder="Película" required /><br />
+                <label for="estudiante">Estudiante:</label><br />
+                <br />
+                <input type="radio" id="student_yes" name="estudiante" value="Si" checked="checked" />
+                <label for="student_yes" class="radio"><span></span>Si</label><br />
+                <input type="radio" id="student_no" name="estudiante" value="No" />
+                <label for="student_no" class="radio"><span></span>No</label><br />
+                <input type="submit" name="enviar" value="Calcular" class="boton" />&nbsp;
+                <input type="reset" name="reset" value="Restablecer" class="boton" />
+            </form>
+        </article>
+    </section>
+</body>
+
+</html>

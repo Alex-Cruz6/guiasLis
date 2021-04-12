@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Tabla de multiplicar</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <script src="js/potencia.js"></script>
+</head>
+
+<body>
+    <section id="slick">
+        <div class="contact-form">
+            <div class="title">Tabla de multiplicar</div>
+            <p class="intro">Ingrese los siguientes datos</p>
+            <div class="w-100">
+                <form name="frmPotencia" id="frmPotencia" action="tabla.php" method="POST">
+                    <div class="field">
+                        <input type="number" name="potencia" id="potencia" maxlength="1" min="0" max="10" step="1" placeholder="(Ingrese un número)" required />
+                        <span class="entypo-altura icon"></span>
+                        <span class="slick-tip left">Ingrese un número entero:</span>
+                    </div>
+                    <input type="submit" value="calcular" class="send" name="enviar" id="enviar" />
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

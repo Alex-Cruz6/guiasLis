@@ -1,0 +1,4 @@
+1, mario , 450
+2, Samuel , 400
+3, Alex , 500
+4, Rene , 600

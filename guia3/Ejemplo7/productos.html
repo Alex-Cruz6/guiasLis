@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Listado de productos</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/productos.css" />
+    <script src="js/modernizr.custom.lis.js"></script>
+    <script src="js/productos.js"></script>
+</head>
+
+<body>
+    <section>
+        <article>
+            <form
+                name="frmproductos" action="productos.php" method="POST">
+                <fieldset>
+                    <legend><span>Ingreso de productos:</span></legend>
+                    <ul>
+                        <li><label for="producto">Nuevo producto:</label>
+                            <div class="campo"><input type="text" name="producto" id="producto" maxlength="60"
+                                    placeholder="(Ingrese un producto)" /><input type="reset" name="agregar"
+                                    id="agregar" value="Agregar" /></div>
+                        </li>
+                        <li><label for="ingresados">Productos ingresados:</label>
+                            <div class="campo"><select name="ingresados[]" id="ingresados" size="6"
+                                    multiple="multiple"></select></div>
+                        </li>
+                        <li>
+                            <div class="campo"><input type="submit" name="enviar" id="enviar" value="Enviar"
+                                    class="boton" /></div>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+</body>
+</article>
+</section>
+
+</html>

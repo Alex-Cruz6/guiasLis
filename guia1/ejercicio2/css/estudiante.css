@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body, html {
+   height: 100%;
+}
+
+body {
+   background-image: url(../img/seguridad.jpg);
+   background-size: 100vw 100vh;
+   background-attachment: fixed;
+   font-family: 'Raleway', sans-serif;
+   color: Brown;
+   font-size: 16px;
+   font-family: Eurostyle,Garamond,Helvetica,sans-serif;
+}
+
+header h1 {
+   color: #fff;
+   font: 700 3em 'Raleway';
+   margin: 16px auto;
+   text-shadow: 0 0 10px #fff, 
+                0 0 20px #fff, 
+                0 0 30px #fff, 
+                0 0 40px #16fff9, 
+                0 0 70px #16fff9, 
+                0 0 80px #16fff9, 
+                0 0 100px #16fff9, 
+                0 0 150px #16fff9;
+   text-align: center;
+}
+
+form {
+   background: rgba(63,63,63,0.6);
+   border-radius: 8px;
+   box-sizing: border-box;
+   margin: 0 auto;
+   margin-top: 40px;
+   padding: 10px 16px;
+   width: 440px;
+}
+
+form h2 {
+   color: #fff;
+   font-family: "Droid Sans",Arial,Helvetica,sans-serif;
+   font-size: 2em;
+   font-weight: Bold;
+   margin: 0;
+   margin-bottom: 20px;
+   text-align: center;
+   text-shadow: 2px 2px 0 #8cfcff, 
+                4px 4px 0 #193660, 
+                6px 6px 0 #8cfcff, 
+                8px 8px 0 #1a3660;
+}
+
+form label {
+   color: rgb(125,255,255);
+   font: normal 1em "Droid Sans",Arial,Helvetica,sans-serif;
+}
+
+input, textarea {
+   box-sizing: border-box;
+   font-family: "Droid Sans",Arial,Helvetica,sans-serif;
+   font-size: 16px;
+   margin-bottom: 20px;
+   padding: 6px;
+   width: 100%;
+}
+
+textarea {
+   min-height: 100px;
+   max-height: 200px;
+   max-width: 100%;
+}
+
+input[type=text] {
+   background-color: rgb(36,36,56,0.9);
+   color: #030313;
+}
+
+label.radio {
+   height: 20px;
+   line-height: 20px;
+   margin-top: -8px;
+}
+
+input[type="checkbox"] { 
+   display: none;
+}
+
+input[type="radio"]{
+   display: none;
+}
+
+input[type="checkbox"] + label span {
+   background: #000019 url(../img/check_radio_button.png) left top no-repeat !important ;
+   cursor:pointer;
+   display: inline-block;
+   height: 19px;
+   margin: 14px 16px 16px 3px;
+   vertical-align: middle;
+   width: 5%;
+}
+
+input[type="checkbox"]:checked + label span {
+   background: #000019 url(../img/check_radio_button.png) -19px top no-repeat;
+   width: 5%;
+}
+
+input[type="radio"] + label span {
+   background: #000019 url(../img/check_radio_button.png) -38px top no-repeat;
+   cursor:pointer;
+   display: inline-block;
+   height: 19px;
+   margin: 14px 16px 16px 3px;
+   vertical-align: middle;
+   width: 5%;
+}
+
+input[type="radio"]:checked + label span {
+   background: #000019 url(../img/check_radio_button.png) -57px top no-repeat;
+   width: 5%;  
+}
+
+input.boton        {
+   background-color: #000016;
+   border-color:#F0F0F0 #000 #000 #F0F0F0;
+   border:1px solid;
+   color: #ffd217;
+   cursor:pointer;
+   font-weight: Bold;
+   margin-bottom: 6px;
+   width: 100%;
+}
+
+input.boton:hover {
+   background-color: rgba(0,0,25,0.7);
+   color: #ffd93c;
+   cursor: pointer;
+}
+
+input.boton:active {
+   background-color: rgba(0,0,25,0.8);
+   border-color: #000 #F0F0F0 #F0F0F0 #000;
+   color: #ffd217;
+   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+   form {
+      width: 100%;
+   }
+}

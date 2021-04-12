@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body                 {
+    background-image: rgba(223,231,233,1);
+    background-image: -moz-linear-gradient(45deg, rgba(223,231,233,1) 0%, rgba(112,180,207,1) 52%, rgba(79,154,186,1) 100%);
+    background-image: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(223,231,233,1)), color-stop(52%, rgba(112,180,207,1)), color-stop(100%, rgba(79,154,186,1)));
+    background-image: -webkit-linear-gradient(45deg, rgba(223,231,233,1) 0%, rgba(112,180,207,1) 52%, rgba(79,154,186,1) 100%);
+    background-image: -o-linear-gradient(45deg, rgba(223,231,233,1) 0%, rgba(112,180,207,1) 52%, rgba(79,154,186,1) 100%);
+    background-image: -ms-linear-gradient(45deg, rgba(223,231,233,1) 0%, rgba(112,180,207,1) 52%, rgba(79,154,186,1) 100%);
+    background-image: linear-gradient(45deg, rgba(223,231,233,1) 0%, rgba(112,180,207,1) 52%, rgba(79,154,186,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe7e9', endColorstr='#4f9aba', GradientType=1 );
+}
+
+fieldset             {
+    background-color:rgb(190,220,230);
+    border:6px ridge rgb(50,100,150);
+    left:-23%;
+    margin-left:50%;
+    position:relative;
+    width:46%;
+}
+
+legend span          {
+    background-color:rgb(20,20,100);
+    border:3px ridge rgb(50,100,150);
+    color:rgb(225,250,250);
+    display:block;
+    font:bold 9pt "Century Gothic","Arial Rounded MT Bold",Helvetica,sans-serif;
+    padding:2px 5px;
+}
+
+label                {
+    color:rgb(30,60,100);
+    display:block;
+    float:left;
+    font:normal 9pt "Arial Rounded MT Bold","Century Gothic",Helvetica,sans-serif;
+    padding-top:0.6em;
+    padding-bottom:0.6em;
+    text-align:right;
+    width:30%;
+}
+
+.campo        {
+    display:block;
+    float:right;
+    position:relative;
+    width:68%;
+}
+
+.boton               {
+    bottom:-0.2em;
+    display:block;
+    left:-2.5em;
+    margin-left:50%;
+    position:relative;
+    width:5em;
+}
+
+ul                   {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+li                   {
+    display:block;
+    line-height:2.1em;
+}
+
+table                {
+    border:8px groove rgb(100,10,5);
+    border-collapse:collapse;
+    position:relative;
+    left:-9%;
+    margin-left:50%;
+    width:18%;
+}
+
+tr                   {
+    border:1px solid rgb(120,20,20);
+}
+
+th                   {
+    background-color:rgb(90,5,3);
+    color:rgb(250,240,200);
+    font:bold 14pt Garamond,Helvetica,sans-serif;
+}
+
+td                   {
+    background-color:rgb(250,240,200);
+    color:rgb(100,10,10);
+    font:normal 14pt Garamond,Helvetica,sans-serif;
+}

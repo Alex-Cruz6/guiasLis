@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 110%;
+}
+
+body{
+    /* Old browsers */
+    background: #aebcbf;
+    /* FF3.6+ */
+    background: -moz-linear-gradient(-45deg, #aebcbf 0%, #555a5b 50%, #686870 51%, #6e7774 100%);
+    /* Chrome,Safari4+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#aebcbf), color-stop(50%,#555a5b), color-stop(51%,#686870), color-stop(100%,#6e7774));
+    /* Chrome10+,Safari5.1+ */
+    background: -webkit-linear-gradient(-45deg, #aebcbf 0%,#555a5b 50%,#686870 51%,#6e7774 100%);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(-45deg, #aebcbf 0%,#555a5b 50%,#686870 51%,#6e7774 100%);
+    /* IE10+ */
+    background: -ms-linear-gradient(-45deg, #aebcbf 0%,#555a5b 50%,#686870 51%,#6e7774 100%);
+    /* W3C */
+    background: linear-gradient(135deg, #aebcbf 0%,#555a5b 50%,#686870 51%,#6e7774 100%);
+    /* IE6-9 fallback on horizontal gradient */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aebcbf', endColorstr='#6e7774',GradientType=1);
+    background-attachment: fixed;
+    font-size: 16px;
+}
+
+#tablamulti, #enlace {
+    margin:0 auto;
+    width:18%;
+}
+      
+#enlace {
+    font:normal 1em "Century Gothic","Arial Rounded MT Bold",Helvetica,sans-serif;
+    text-align:center;
+}
+      
+caption {
+    color:#fff;
+    font:bold 1.5em "Lucida Sans",Tahoma,Helvetica,sans-serif;
+    padding-bottom:12px;
+    padding-top:12px;
+    text-align:center;
+    text-shadow: 0 1px 0 #ccc,
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+}
+	  
+table {
+    border:3px groove rgb(111,3,6);
+    border-collapse:collapse;
+}
+      
+th {
+    background-color:rgb(233,122,155);
+    border:2px solid rgb(111,5,9);
+    border-collapse:collapse;
+    font:bold 1em "Century Gothic","Arial Rounded MT Bold",Helvetica,sans-serif;
+    padding: 3px 5px;
+    text-align:center;
+}
+      
+td {
+    border-collapse:collapse;
+    border:2px solid rgb(111,5,9);
+    background-color:rgb(225,225,225);
+    padding: 3px 5px;
+    text-align:center;
+    font:normal 1em "Lucida Sans",Tahoma,Helvetica,sans-serif;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Nuevo enlace</title>
+    <link rel="stylesheet" href="css/metallicform.css" />
+</head>
+
+<body>
+    <section>
+        <article id="metallic-form">
+            <h1>Ingreso de enlaces</h1>
+            <form method="POST" action="infoenlaces.php">
+                <input type="text" name="dominio" id="dominio" maxlength="60" placeholder="(Nombre del dominio)" />
+                <input type="text" name="enlace" id="enlace" maxlength="150" placeholder="http://www.dominio.com" />
+                <input type="text" name="nivel" id="nivel" maxlength="150" placeholder="Nivel" />
+                <input type="submit" name="registrar" value="Registrar" />
+                <input type="reset" name="restablecer" value="Restablecer" />
+            </form>
+        </article>
+    </section>
+</body>
+<script src="js/modernizr.custom.lis.js"></script>
+
+</html>
