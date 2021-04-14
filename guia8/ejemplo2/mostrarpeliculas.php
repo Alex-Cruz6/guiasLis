@@ -5,6 +5,7 @@
             <option value="3">Mostrar 3 registros</option>
             <option value="5">Mostrar 5 registros</option>
             <option value="10">Mostrar 10 registros</option>
+            <option value="11">Mostrar todos registros</option>
         </select>
         <input class="boton" type="submit" name="limite" id="limite" value="Establer Limite">
     </form>
@@ -16,7 +17,21 @@
     //Definiendo el número total de registros que se van a mostrar
     if(isset($_POST['limite'])){
         $auxLimit = $_POST['miSelect'] ? $_POST['miSelect'] : 5;
-        define("LIMIT", $auxLimit);
+        if ($auxLimit == 11) {
+            //Creando una instancia de la clase database
+            $db2 = DataBase::getInstance();
+            $sql2  = "SELECT COUNT(idpelicula) AS TOTAL FROM pelicula";
+            //Guardando el set de resultados de la consulta a la base de datos en $pelis
+            $db2->setQuery($sql2);
+            $pelis2 = $db2->loadObjectList(); 
+            //obteniendo el total de peliculas
+            foreach($pelis2 as $pelicula2){
+                $total = $pelicula2->TOTAL;
+            }
+            define("LIMIT", $total);    
+        }else{
+            define("LIMIT", $auxLimit);
+        }
     }else{
         define("LIMIT", 5);
     }

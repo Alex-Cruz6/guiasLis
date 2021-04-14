@@ -14,9 +14,9 @@ body{
 }
 .boton{
     text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 20px;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 15px;
     color: black;
     background-color: rgb(91, 179, 214);
     border-radius: 6px;
