@@ -33,7 +33,8 @@
                     include_once("db-mysqli.php");
                     //Realizando la consulta para insertar 
                     //el nuevo registro a la base de datos
-                    $planconsulta  = "INSERT INTO libros (isbn, autor, titulo, precio) ";
+                    
+                    /*$planconsulta  = "INSERT INTO libros (isbn, autor, titulo, precio) ";
                     $planconsulta .= "VALUES (?, ?, ?, ?)";
                     $sentencia = $db->prepare($planconsulta);
                     $sentencia->bind_param("sssd",$isbn,$autor,$titulo,$precio);
@@ -41,12 +42,16 @@
                     echo "<div class=\"query\">\n\t<p>\n\t\t";
                     echo $sentencia->affected_rows . " libro(s) agregado(s) a la base de datos\n";
                     echo "</p>\n</div>\n";
-                    $sentencia->close();   
-                    /*  $consulta  = "INSERT INTO libros (isbn, autor, titulo, precio) ";
+                    $sentencia->close();   */
+
+                    $consulta  = "INSERT INTO libros (isbn, autor, titulo, precio) ";
                     $consulta .= "VALUES ('" . $isbn . "', '" . $autor . "', '" . $titulo . "', " . $precio . ")";
                     $resultc = $db->query($consulta);
-                    if($resultc){echo $db->affected_rows . " libro agregado a la base de datos.";
-                    } */
+                    if($resultc){
+                        echo "<div class=\"query\">\n\t<p>\n\t\t";
+                        echo $db->affected_rows . " libro(s) agregado(s) a la base de datos.";
+                        echo "</p>\n</div>\n";
+                    }
                     //Cerrar la conexión
                     $db->close();
                 ?>
