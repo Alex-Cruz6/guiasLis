@@ -78,5 +78,6 @@
         $query = $cn->prepare("INSERT INTO usuario(nombre, apellido, codigo, edad, genero, ciudad) VALUES(?, ?, ?, ?, ?, ?)");
         $query->execute(array($nombre, $apellido, $password, $edad, $genero, $ciudad));
         Database::disconnect();
+        header("Location: index.php");
     }
 ?>

@@ -49,7 +49,7 @@
                                     <td class="text-center">
                                         <a href="read.php?id='.$row["idusuario"].'" class="btn btn-default">Obtener</a>
                                         <a href="update.php?id='.$row["idusuario"].'" class="btn btn-success">Modificar</a>
-                                        <a href="read.php?id='.$row["idusuario"].'" class="btn btn-danger">Eliminar</a>
+                                        <a href="delete.php?id='.$row["idusuario"].'" class="btn btn-danger">Eliminar</a>
                                     </td></tr>';
                                 }
                             ?>
