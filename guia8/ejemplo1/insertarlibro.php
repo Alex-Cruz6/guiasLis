@@ -29,12 +29,6 @@
                         echo $msg;
                         exit(0);
                     }
-                    if(!get_magic_quotes_gpc()){
-                        $isbn = addslashes($isbn);
-                        $autor = addslashes($autor);
-                        $titulo = addslashes($titulo);
-                        $precio = doubleval($precio);
-                    }
                     //Incluir librería de conexión a la base de datos
                     include_once("db-mysqli.php");
                     //Realizando la consulta para insertar 

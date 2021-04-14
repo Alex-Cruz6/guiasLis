@@ -34,13 +34,6 @@
                     echo $msg;
                     exit(0);
                 }
-                if(!get_magic_quotes_gpc()){
-                    $isbnx = addslashes($isbnx);
-                    $isbn = addslashes($isbn);
-                    $autor = addslashes($autor);
-                    $titulo = addslashes($titulo);
-                    $precio = doubleval($precio);
-                }
                 //Creando la consulta de actualización con los datos
                 //enviados del formulario de modificación de libros
                 $consulta  = "UPDATE libros SET isbn='" . $isbn . "', autor='" . $autor;
@@ -53,11 +46,11 @@
                 echo "\t\t" . $num_results . " fila(s) actualizada(s)\n";
                 echo "\t</p>\n</div>\n";$_GET['opc'] = "modificar";
             }
-            if(isset($_GET['del']) && $_GET['del']== "s"){
+            if(isset($_POST['eliminarlibro'])){
                 $consulta  = "DELETE FROM libros WHERE isbn='" . $_GET['id'] . "'";
                 $resultc = $db->query($consulta);
                 $num_results = $db->affected_rows;
-                echo "<div class=\"query\">\n\t<p>" . $consulta . "</p>\n";
+                echo "<div class=\"query\">\n\t";
                 echo "Se ha eliminado" . $num_results . " registro de isbn = " .  $_GET['id'] . "\n</div>\n";
             }
             //Haciendo una consulta de todos los libros presentes

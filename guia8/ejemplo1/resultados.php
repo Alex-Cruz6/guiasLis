@@ -31,10 +31,10 @@
                     }
                     //En servidores antiguos se solía tener habilitada esta opción
                     //con el propósito de escapar de forma automática las comillas
-                    if(!get_magic_quotes_gpc()){
+                    /*if(!get_magic_quotes_gpc()){
                         $tema = addslashes($tema);
                         $termino = addslashes($termino);
-                    }
+                    }*/
                     //Incluir librería de conexión a la base de datos
                     include_once("db-mysqli.php");
                     if($tipobusqueda == 'exacta'){
@@ -44,10 +44,10 @@
                         $consulta  = "SELECT * FROM libros WHERE " . $tema;
                         $consulta .= " LIKE '%" . $termino . "%'";
                     }
-                    echo "<div class=\"query\">\n\t<p>" . $consulta . "</p>\n\t";
                     $resultc = $db->query($consulta);
                     $num_results = $resultc->num_rows;
-                    echo "<p>Número de libros encontrados: . $num_results</p>\n</div>\n";
+                    echo "<div class=\"query\">\n\t";
+                    echo "Número de libros encontrados: " . $num_results . "</>\n</div>\n";
                     echo "<table class=\"column-options\">\n";
                     for($i=0; $i<$num_results; $i++){
                         $row = $resultc->fetch_assoc();
