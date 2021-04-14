@@ -1,9 +1,25 @@
+<center>
+    <form name="fomul" action="" method="POST"> 
+        <h2>Seleccione el número de registros a mostrar:</h2> 
+        <select class="select-css" name="miSelect" id="miSelect"> 
+            <option value="3">Mostrar 3 registros</option>
+            <option value="5">Mostrar 5 registros</option>
+            <option value="10">Mostrar 10 registros</option>
+        </select>
+        <input class="boton" type="submit" name="limite" id="limite" value="Establer Limite">
+    </form>
+</center>
 <?php
     spl_autoload_register(function ($classname) {
         require_once("udb_" . $classname . ".class.php");
     });
     //Definiendo el número total de registros que se van a mostrar
-    define("LIMIT", 5);
+    if(isset($_POST['limite'])){
+        $auxLimit = $_POST['miSelect'] ? $_POST['miSelect'] : 5;
+        define("LIMIT", $auxLimit);
+    }else{
+        define("LIMIT", 5);
+    }
     //Creando objeto de la clase paginacion
     $paginacion = new paginacion();   
     //Obteniendo el número de página de resultados solicitada
@@ -31,6 +47,7 @@
         <meta charset="utf-8" />
         <title>Consultas de varias tablas</title>
         <link rel="stylesheet" href="css/tablas.css" />
+        <link rel="stylesheet" href="css/form.css">
         <script src="js/modernizr.custom.lis.js"></script>
     </head>
     <body>
