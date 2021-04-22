@@ -1,0 +1,86 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font: normal 16px Arial, Helvetica, "Liberation Sans";
+	/* Old browsers */
+	background: #cdeb8e;
+	/* FF3.6+ */
+	background: -moz-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
+	/* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cdeb8e), color-stop(100%, #a5c956));
+	/* Chrome10+,Safari5.1+ */
+	background: -webkit-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
+	/* IE10+ */
+	background: -ms-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
+	/* W3C */
+	background: linear-gradient(to bottom, #cdeb8e 0%, #a5c956 100%);
+	/* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956', GradientType=0);
+}
+
+#login {
+	height: 1.6em;
+	widht: 100%;
+}
+
+#login p {
+	color: #3366cc;
+	font: normal 0.9em Arial, Helvetica, "Libaration Sans";
+	text-align: right;
+}
+
+#login p a:link {
+	text-decoration: none;
+	color: #6699ff;
+}
+
+#login p a:active,
+#login p a:hover {
+	text-decoration: none;
+	color: #6699ff;
+}
+
+article h3 {
+	color: #003366;
+}
+
+.navi {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navi li {
+	margin: 2px;
+	padding: 0;
+	/* Ya no necesito el padding, tambien quitare el borde que puse antes. */
+}
+
+.navi li a {
+	background-color: #000000;
+	/* Agrego un borde ancho a la izquierda */
+	border-left: 10px solid #666666;
+	color: #FFFFFF;
+	display: block;
+	font-family: Arial, Helvetica, "Liberation Sans";
+	font-size: 0.9em;
+	padding: 5px 6px;
+	text-decoration: none;
+	text-align: left;
+	width: 60%;
+}
+
+
+/* Estado hover */
+
+.navi li a:hover {
+	color: #99CC00;
+	background-color: #003366;
+	/* Luego le cambio el color al borde en el evento hover. */
+	border-left-color: #99CC00;
+}
