@@ -7,6 +7,7 @@
     <head>
         <meta charset="utf-8" />
         <title>PHP [hidden y urls]: caja.php</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
     </head>
     <body>
         <section>
@@ -19,7 +20,7 @@
                     mostrarCarrito($carrito);
                 ?>
                 <p align="center">
-                    Pulsa <a href="./tienda.php">aquí</a> para continuar.
+                    Pulsa <a class="btn btn-primary" href="./tienda.php">aquí</a> para continuar.
                 </p>
             </article>
         </section>

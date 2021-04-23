@@ -6,6 +6,7 @@
     <head>
         <meta charset="utf-8" />
         <title>PHP [hidden:urls]: tienda.php</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
     </head>
     <body>
         <header>
@@ -25,11 +26,10 @@
                     endif;
                     //Mostrar los artículos disponibles
                     estantes($carrito);
-                    echo "<hr />\n";
+                    echo "<hr/>";
                     //Mostrar el contenido del carrito
                     mostrarCarrito($carrito);   
                 ?>
-                <hr />
                 <form action="./caja.php">
                     <div align="center">
                         <?php
@@ -41,7 +41,7 @@
                             }
                             echo $hidden;
                         ?>
-                        <button type="submit">Caja</button>
+                        <button class="btn btn-primary" type="submit">Caja</button>
                     </div>
                 </form>
             </article>
