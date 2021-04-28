@@ -1,0 +1,20 @@
+body {
+	background: rgb(210, 215, 235) url(../img/lightblue.jpg);
+}
+
+#resultados {
+	width: 20%;
+	margin: 0 auto;
+}
+
+label,
+legend {
+	font: bold 10pt Tahoma, Verdana, Helvetica, sans-serif;
+	color: rgb(6, 5, 6);
+}
+
+.boton {
+	background-color: rgb(25, 30, 60);
+	font: bold 10pt Verdana, Helvetica, sans-serif;
+	color: rgb(230, 240, 150);
+}

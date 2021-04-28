@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Sistema de encuesta</title>
+    <script language="JavaScript" type="text/javascript" src="js/javascript.js"></script>
+    <link type="text/css" rel="stylesheet" media="screen" href="css/encuesta.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Encuesta con AJAX</h1>
+    </header>
+    <section>
+        <article>
+            <div id="resultados">
+                <p style="padding-bottom: 10px;"><strong>&iquest;Hay vida m&aacute;s all&aacute;?</strong></p>
+                <form onsubmit="cargarResultados();return false;" name="frmencuesta" action="">
+                    <fieldset>
+                        <legend>Encuesta de opini&oacute;n</legend><input type="hidden" name="cod" value="1" />
+                        <p><input type="radio" name="opcion" value="1" id="opcion1" /><label
+                                for="opcion1">S&iacute;</label></p>
+                        <p><input type="radio" name="opcion" value="2" id="opcion2" /><label for="opcion2">No</label>
+                        </p>
+                        <p><input type="radio" name="opcion" value="3" id="opcion3" /><label
+                                for="opcion3">No lo s&eacute;</label></p><input type="hidden" name="opciones"
+                            value="3" />
+                        <p style="text-align:center;"><input type="submit" name="votar" value="Votar" class="boton" />
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>

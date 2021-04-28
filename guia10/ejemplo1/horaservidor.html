@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Hora del servidor</title>
+    <link rel="stylesheet" href="css/showtime.css" />
+    <script src="js/xmlhttp.js"></script>
+    <script src="js/showtime.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Obtener hora del servidor usando AJAX</h1>
+    </header>
+    <section>
+        <article>
+            <h3>Obtiene la hora del sistema sin actualizar la página</h3>
+            <div id="boton">
+                <form action="#">
+                    <input type="button" value="Obtener hora del servidor" class="btn" onclick="getServerTime();" />
+                </form>
+            </div>
+            <div id="showtime" class="displaybox"></div>
+        </article>
+    </section>
+</body>
+
+</html>

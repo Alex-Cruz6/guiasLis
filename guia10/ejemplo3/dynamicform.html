@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ricardo Elías">
+    <title>Control dinámico de los datos de un formulario</title>
+    <link rel="stylesheet" href="css/dynamicForms.css" />
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script src="js/ajaxBasics.js"></script>
+    <script src="js/dynamicForms.js"></script>
+</head>
+
+<body>
+    <section>
+        <article>
+            <form action="javascript:void(0);" method="GET" id="myForm" name="myForm">
+                <fieldset>
+                    <legend>Información personal</legend>
+                    <label for="firstName">Nombre:</label>
+                    <input class="formInputText" type="text" name="firstName" id="firstName" placeholder="Nombre"
+                        maxlength="16" tabindex="1" /><br />
+                    <label for="lastName">Apellido:</label>
+                    <input class="formInputText" type="text" name="lastName" id="lastName" placeholder="Apellido"
+                        maxlength="16" tabindex="2" /><br />
+                    <label for="address1">Dirección:</label>
+                    <input class="formInputText" type="text" name="address1" id="address1" placeholder="Dirección 1"
+                        maxlength="24" tabindex="3" /><br />
+                    <label>&nbsp;</label>
+                    <input class="formInputText" type="text" name="address2" id="address2" placeholder="Dirección 2" 
+                    maxlength="24" tabindex="4" /><br />
+                    <label for="estado">País: </label>
+                    <select class="formSelect" name="country" id="country" tabindex="5">
+                        <option value="(Elige un país)" selected="selected">(Elige un país)</option>
+                        <option>Estados Unidos</option>
+                        <option>Canadá</option>
+                        <option>México</option>
+                    </select>
+                    <label for="state">Estado/Provincia:</label>
+                    <select class="formSelect" name="state" id="state" size="1" tabindex="5">
+                        <option selected="selected">(Elige un país primero)</option>
+                    </select>
+                    <div style="clear:both;">
+                        <label>&nbsp;</label>
+                        <input class="formInputButton" type="submit" name="submitButtonName" id="submitButtonName" 
+                            value="Enviar" tabindex="9" />
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+    </section>
+</body>
+
+</html>

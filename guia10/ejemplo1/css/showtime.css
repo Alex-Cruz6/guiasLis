@@ -1,0 +1,51 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #699CC3;
+}
+
+h1 {
+	text-align: center;
+	font: Bold 20pt "Rockwell Extra Bold", Stencil, Helvetica, sans-serif;
+	color: #030660;
+}
+
+h3 {
+	text-align: center;
+	font: Bold 14pt "Century Gothic", Perpetua, Helvetica, sans-serif;
+	color: #600202;
+}
+
+#boton {
+	width: 420px;
+	position: relative;
+	left: 50%;
+	margin-left: -210px;
+	color: White;
+	text-align: center;
+}
+
+.btn {
+	background-color: rgb(99, 09, 09);
+	color: Gold;
+	font: bold 11pt Perpetua, Garamond, Helvetica, sans-serif;
+}
+
+.displaybox {
+	width: 350px;
+	height: 60px;
+	position: relative;
+	left: 50%;
+	margin-left: -175px;
+	background-color: #999;
+	border: 8px outset #336;
+}
+
+.time {
+	text-align: center;
+	font: bold 24pt "Copperplate Ghotic Bold", "Lucida Console", Verdana, sans-serif;
+	color:rgb(30, 30, 66);
+}

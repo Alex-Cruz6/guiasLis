@@ -1,0 +1,92 @@
+body {
+	background: Olive url(../img/bgolive.jpg);
+}
+
+pre {
+	text-indent: 30px;
+}
+
+#tabmenu {
+	width: 460px;
+	color: #000;
+	border-bottom: 1px solid black;
+	margin: 12px 0px 0px 0px;
+	padding: 0px;
+	z-index: 1;
+	padding-left: 10px;
+}
+
+#tabmenu li {
+	display: inline;
+	overflow: hidden;
+	list-style-type: none;
+}
+
+#tabmenu a,
+a.active {
+	color: #CACACA;
+	background: #295229;
+	font: normal 1em verdana, Arial, sans-serif;
+	border: 1px solid black;
+	padding: 2px 5px 0px 5px;
+	margin: 0px;
+	text-decoration: none;
+	cursor: hand;
+}
+
+#tabmenu a.active {
+	background: #D6D6A3;
+	color: #305030;
+	border-bottom: 1px solid #D6D6A3;
+}
+
+#tabmenu a:hover {
+	color: #FFFFFF;
+	background: #ADC09F;
+}
+
+#tabmenu a:visited {
+	color: Red;
+	background: #A0A0A0;
+}
+
+#tabmenu a.active:hover {
+	background: #FCFCE3;
+	color: #A3A396;
+}
+
+#content {
+	width: 460px;
+	font: 0.9em/1.3em verdana, sans-serif;
+	text-align: justify;
+	background: #FFFFFF;
+	padding: 20px;
+	border: 1px solid black;
+	border-top: none;
+	z-index: 2;
+}
+
+#content a {
+	text-decoration: none;
+	color: #E8E9BE;
+}
+
+#content a:hover {
+	background: #AAAAAA;
+}
+
+#content #titulo h2 {
+	font: bold 14pt "Century Gothic", Verdana, Helvetica, sans-serif;
+	color: rgb(25, 50, 20);
+	background: rgb(225, 230, 180);
+}
+
+#content #texto p {
+	text-align: justify;
+	font: normal 10pt Verdana, Helvetica, sans-serif;
+	color: rgb(26, 30, 26);
+}
+
+#content #texto img {
+	display: block;
+}
