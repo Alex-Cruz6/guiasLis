@@ -14,13 +14,13 @@
     }
     $tipo = isset($_GET['content']) ? $_GET['content'] : 0;
     if($tipo != 0){
-        $qr  = "SELECT titulonoticia, textonoticia, imgnoticia FROM noticia";
-        $qr .= " WHERE idnota = $tipo";
+        $qr  = "SELECT tituloLenguaje, textoLenguaje, imgLenguaje FROM lenguajes ";
+        $qr .= "WHERE idLenguaje = $tipo";
         $rs = $cn->query($qr);
         while($row = $rs->fetch_object()){
-            $info  = "<div id=\"titulo\">\n<h2>{$row->titulonoticia}</h2>\n</div>\n";
-            $info .= "<div id=\"texto\">\n<p>\n{$row->textonoticia}\n";
-            $info .= "<img src=\"{$row->imgnoticia}\n\" />\n";
+            $info  = "<div id=\"titulo\">\n<h2>{$row->tituloLenguaje}</h2>\n</div>\n";
+            $info .= "<div id=\"texto\">\n<p>\n{$row->textoLenguaje}\n";
+            $info .= "<img class='img' src=\"{$row->imgLenguaje}\n\" />\n";
             $info .= "</p>\n</div>\n";
         }
         echo $info;

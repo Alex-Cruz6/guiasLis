@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ventana con pestañas usando AJAX</title>
+    <script type="text/javascript" src="js/ahahLib.js"></script>
+    <script type="text/javascript" src="js/activetab.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/tabs.css" />
+</head>
+
+<body>
+    <section>
+        <article>
+            <center><h2>Noticias relevante de los Lenguajes de programación más populares</h2></center>
+            <ul id="tabmenu">
+                <li onclick="makeactive(1)"><a class="" id="tab1">PHP</a></li>
+                <li onclick="makeactive(2)"><a class="" id="tab2">Java</a></li>
+                <li onclick="makeactive(3)"><a class="" id="tab3">C#</a></li>
+            </ul>
+            <div id="content">(Aquí se mostrará el contenido de cada pestaña)</div>
+        </article>
+    </section>
+</body>
+
+</html>
